@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "GasoMatamoros",
+    "slug": "gaso-matamoros",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "gasomatamoros",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gasomatamoros.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "GasoMatamoros necesita tu ubicación para mostrarte las gasolineras más cercanas y calcular distancias exactas en Matamoros."
+      }
+    },
+    "android": {
+      "package": "com.gasomatamoros.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "GasoMatamoros usa tu ubicación para encontrar las gasolineras más cercanas en Matamoros."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
